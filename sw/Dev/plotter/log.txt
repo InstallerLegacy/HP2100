@@ -1,0 +1,9 @@
+Logging to file "log.txt"
+
+HALT instruction 102077, P: 77712 (NOP)
+
+HALT instruction 102000, P: 00150 (LIA 1)
+E:/Tmp/SimH/Ok/HP2100/sw/Dev/Plotter/run_plotter_diag.ini-56> go
+
+Goodbye, P: 00221 (CPA 1303)
+Log file closed

@@ -1,0 +1,12 @@
+Logging to file "log.txt"
+
+***
+*** RTE-IV Operating System (1978)
+***
+
+
+SET TIME
+ :SYPR,FMGR,99
+ :LL,1
+ :
+:

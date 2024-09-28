@@ -1,0 +1,29 @@
+Logging to file "log.txt"
+
+HALT instruction 102077, P: 77712 (NOP)
+
+HALT instruction 102077, P: 36323 (JMP 36322)
+
+HALT instruction 102077, P: 77712 (NOP)
+
+HALT instruction 102001, P: 00113 (LDA 355)
+
+HALT instruction 102002, P: 00117 (LDA 353)
+
+HALT instruction 102003, P: 00123 (CLA)
+
+HALT instruction 102004, P: 00127 (LDA 354)
+
+HALT instruction 102005, P: 00133 (LDA 356)
+
+HALT instruction 102006, P: 00145 (LDA 351)
+
+HALT instruction 102007, P: 00151 (LDA 351)
+
+HALT instruction 102010, P: 00155 (LDA 350)
+
+HALT instruction 102011, P: 00164 (JMP 107)
+bye
+sim> bye
+Goodbye
+Log file closed

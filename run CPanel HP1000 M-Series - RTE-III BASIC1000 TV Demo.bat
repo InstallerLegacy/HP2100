@@ -1,0 +1,4 @@
+@echo off
+title %~n0
+cd sw
+hp2100 HP_cpanel.ini  1000M   RTE-III   run_bas.ini  test_run/Sample_TV.bas.txt

@@ -1,0 +1,147 @@
+HP 2100 simulator V3.8-0
+sim> do bckof.sim
+
+HALT instruction 102077, P: 77756 (ALF,ALF)
+
+At the "LIST DEVICE LU#?" prompt, press ENTER.
+At the "I/O RECONFIGURATION?(YES/NO)" prompt, enter "NO".
+At the "MEM RECONFIGURATION?(YES/NO)" prompt, enter "NO".
+At the "PLEASE ENTER TAPE-LU FOR READING !BCKO2:" prompt, enter "8".
+
+Then at the "TASK?" prompt, stop simulation.
+Configure the 79xx disc as required and enable the drive format switch.
+Attach the mag tape and disc images as desired.
+Then continue simulation to perform backup or restore.
+Entering "??" at a prompt gives a list of commands or options.
+
+START RECONFIGURATION 
+LIST DEVICE LU#?
+
+I/O RECONFIGURATION ALREADY PERFORMED:
+CURRENT SELECT CODE#,NEW SELECT CODE#?
+60 ,60        *SYSTEM CONSOLE 
+CURRENT I/O CONFIGURATION:
+SELECT CODE 11= TBG 
+SELECT CODE 15= EQT  1,TYPE  5  PRMPT 
+SELECT CODE 17= EQT  8,TYPE 23
+SELECT CODE 20= EQT  8,TYPE 23
+SELECT CODE 21= EQT 10,TYPE 23
+SELECT CODE 50= EQT  9,TYPE 31
+SELECT CODE 51= EQT  9,TYPE 31
+SELECT CODE 52= EQT  3,TYPE 32
+SELECT CODE 53= EQT  4,TYPE 32
+SELECT CODE 54= EQT  5,TYPE 33
+SELECT CODE 60= EQT  2,TYPE  0
+SELECT CODE 61= EQT  7,TYPE  0  PRMPT 
+SELECT CODE 62= EQT  6,TYPE  5  PRMPT 
+I/O RECONFIGURATION?(YES/NO)
+NO
+CURRENT PHYSICAL MEM SIZE:   128 PAGES
+MEM RECONFIGURATION?(YES/NO)
+NO
+
+SET TIME
+   LU#  EQT# SUBC#   S.C.  TYPE  DESCRIPTION                
+     1     2     1    60B    0B  INTERACTIVE TERMINAL       
+     4     1     1    15B    5B  LEFT  C.T.U.               
+     5     1     2    15B    5B  RIGHT C.T.U                
+     7    10     0    21B   23B  MAG TAPE/MASS STORAGE      
+     8     8     0    17B   23B  MAG TAPE/MASS STORAGE      
+     9     5     3    54B   33B  CS80 CARTRIDGE TAPE        
+    10     2     1    60B    0B  INTERACTIVE TERMINAL       
+    11     7     0    61B    0B  INTERACTIVE TERMINAL       
+    12     9     0    50B   31B  7900 DISK                  
+    13     3     0    52B   32B  79XX  (MAC) SERIES DISK    
+    14     4     0    53B   32B  79XXH (ICD) SERIES DISK    
+    15     5     0    54B   33B  79XX  (CS80) SERIES DISK   
+    16     5     4    54B   33B  CS80 CARTRIDGE TAPE        
+    17    10     3    21B   23B  MAG TAPE/MASS STORAGE      
+PLEASE ENTER TAPE-LU FOR READING !BCKO2: 8
+PROGRAM FORMT READY 
+PROGRAM PSPAR READY 
+PROGRAM PSAVE READY 
+PROGRAM PCOPY READY 
+PROGRAM PRSTR READY 
+OFFLINE DISK-TAPE SAVE/RESTORE/COPY SYSTEM, !BCKOF
+TASK? 
+
+[CTRL+E]
+
+Simulation stopped, P: 02570 (JMP 2570)
+sim> attach -r msc0 rte-6vm_92084-13503r2540.tap
+sim> set ds0 7906
+sim> set ds0 format
+sim> attach ds0 RTE-6VM_Rev-2540.disc
+sim> go
+RE
+ENTER OPTIONS
+VE
+ENTER DEST DISK LU
+13
+ENTER TAPE LU
+8
+ENTER FILE NUMBER
+1
+ENTER HARD COPY LU
+1
+  
+CREATED USING: PSAVE 92084-16656 REV.2540  <851001.0925 
+READ USING:    PRSTR 92084-16657 REV.5020 <890331.1004>     
+TAPE NUMBER:     1   SAVE FILE:      1  USER:                         
+PROGRAM: PSAVE       OPTIONS: VE  MU    DATE:  8:52 AM  FRI.,  7  MAR., 1986
+DISC LU:     2       TITLE: PS#600 7906/20M REV.2540                
+SECTION:     1       (TRK      0  SEC      0) 
+OK TO PROCEED? (Y OR N)  Y
+  
+MODEL# ,  #TRACKS,  1ST CYL,  HEAD#  ,  #SURF  ,  ADDRESS,  #SPARES,  
+  
+  79XX       390         0         0         2         0         6    
+VERIFING DISK LU W/SPARING
+  
+0006 SPARE TRACKS AVAILABLE 
+  
+FORMT FINISHED
+RESTORING SUBCHANNEL     0
+RESTORED  SUBCHANNEL     0
+PRSTR NORMAL END OF JOB   
+TASK? 
+RE
+ENTER OPTIONS
+VE
+ENTER DEST DISK LU
+13
+ENTER TAPE LU
+8
+ENTER FILE NUMBER
+2
+ENTER HARD COPY LU
+1
+  
+CREATED USING: PSAVE 92084-16656 REV.2540  <851001.0925 
+READ USING:    PRSTR 92084-16657 REV.5020 <890331.1004>     
+TAPE NUMBER:     1   SAVE FILE:      2  USER:                         
+PROGRAM: PSAVE       OPTIONS: VE  MU    DATE:  8:52 AM  FRI.,  7  MAR., 1986
+DISC LU:    10       TITLE: PS#600 7906/20M REV.2540                
+SECTION:     1       (TRK      0  SEC      0) 
+OK TO PROCEED? (Y OR N)  Y
+  
+MODEL# ,  #TRACKS,  1ST CYL,  HEAD#  ,  #SURF  ,  ADDRESS,  #SPARES,  
+  
+  79XX       420       198         0         2         0         6    
+VERIFING DISK LU W/SPARING
+  
+0006 SPARE TRACKS AVAILABLE 
+  
+FORMT FINISHED
+RESTORING SUBCHANNEL     0
+RESTORED  SUBCHANNEL     0
+PRSTR NORMAL END OF JOB   
+TASK? 
+EX
+BCKOF TERMINATED BY USER
+
+[CTRL+E]
+
+Simulation stopped, P: 02570 (JMP 2570)
+sim> quit
+Goodbye

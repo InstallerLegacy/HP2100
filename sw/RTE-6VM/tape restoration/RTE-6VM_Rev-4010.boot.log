@@ -1,0 +1,234 @@
+HP 2100 simulator V3.8-0
+sim> do rte.sim RTE-6VM_Rev-4010.disc
+
+HALT instruction 102077, P: 02200 (JMP 2202)
+
+At the "LIST DEVICE LU#?" prompt, press ENTER.
+At the "I/O RECONFIGURATION?(YES/NO)" prompt, enter "NO".
+At the "MEM RECONFIGURATION?(YES/NO)" prompt, enter "NO".
+
+RTE should then start and print "SET TIME".
+
+START RECONFIGURATION 
+LIST DEVICE LU#?
+
+I/O RECONFIGURATION ALREADY PERFORMED:
+CURRENT SELECT CODE#,NEW SELECT CODE# 
+12 ,12        *SYSTEM DISC 1  
+64 ,64        *SYSTEM CONSOLE 
+CURRENT I/O CONFIGURATION:
+SELECT CODE 11= TBG 
+SELECT CODE 12= EQT    1,TYPE 32
+SELECT CODE 13= EQT   41,TYPE 66
+SELECT CODE 14= EQT   35,TYPE 66
+SELECT CODE 15= EQT    2,TYPE  5  PRMPT 
+SELECT CODE 16= EQT    6,TYPE 12
+SELECT CODE 17= EQT    8,TYPE 23
+SELECT CODE 20= EQT    8,TYPE 23
+SELECT CODE 21= EQT    5,TYPE 37
+SELECT CODE 22= EQT   14,TYPE  0  PRMPT 
+SELECT CODE 23= EQT    9,TYPE  7  PRMPT 
+SELECT CODE 24= EQT    7,TYPE  5  PRMPT 
+SELECT CODE 25= EQT   47,TYPE 23
+SELECT CODE 50= EQT   46,TYPE 33
+SELECT CODE 51= EQT   45,TYPE 32
+SELECT CODE 52= EQT   27,TYPE 43
+SELECT CODE 53= EQT   28,TYPE 43
+SELECT CODE 54= EQT   29,TYPE 43
+SELECT CODE 55= EQT   30,TYPE 43
+SELECT CODE 56= EQT   31,TYPE 43
+SELECT CODE 57= EQT   32,TYPE 43
+SELECT CODE 60= EQT   22,TYPE 12
+SELECT CODE 61= EQT   23,TYPE  5  PRMPT 
+SELECT CODE 62= EQT   24,TYPE  5  PRMPT 
+SELECT CODE 63= EQT   25,TYPE  5  PRMPT 
+SELECT CODE 64= EQT    4,TYPE  0
+SELECT CODE 65= EQT   40,TYPE 67
+SELECT CODE 66= EQT   37,TYPE 65
+SELECT CODE 67= EQT   38,TYPE 65
+SELECT CODE 70= EQT   39,TYPE 65
+SELECT CODE 71= EQT   10,TYPE  7     0
+SELECT CODE 72= EQT    3,TYPE 12
+SELECT CODE 73= EQT   33,TYPE  0  PRMPT 
+SELECT CODE 76= EQT   43,TYPE 77
+SELECT CODE 77= EQT   44,TYPE 77
+I/O RECONFIGURATION?(YES/NO)
+NO
+CURRENT PHYSICAL MEM SIZE:   256 PAGES
+MEM RECONFIGURATION?(YES/NO)
+NO
+
+SET TIME
+  
+  
+  
+  
+              *********************************** 
+              *                                 * 
+              *   HP 1000 SYSTEM WITH RTE-6/VM  * 
+              *                                 * 
+              *   COMMENCING SYSTEM START UP    * 
+              *                                 * 
+              *********************************** 
+  
+  
+  
+  
+ :TR,*RASLU         RE-ASSIGN SYSTEM LU'S 
+FMGR-006
+                 ***********************************
+                 *                                 *
+                 *         HP 1000 SYSTEM          *
+                 *    SYSTEM START UP COMPLETED    *
+                 *   SOURCE: 92084-17010 REV.2540  *
+                 *                                 *
+                 ***********************************
+  
+     ************************************************************** 
+     *                     INITIALIZATION MENU                    * 
+     ************************************************************** 
+     *      DESIRED ACTION        **          ENTER               * 
+     *                            **                              * 
+     *     ENABLE SESSION         **           TR,*EN*S           * 
+     *     NON-SESSION            **           TR,*NON*S          * 
+     *                            **                              * 
+     *     REPEAT LAST MENU       **           TR,*MENU           * 
+     *                            **                              * 
+     ************************************************************** 
+     *    FOR MORE INFORMATION ON PRIMARY SYSTEMS, PLEASE SEE     * 
+     *    RTE-6/VM SOFTWARE INSTALLATION MANUAL (92084-90011).    * 
+     ************************************************************** 
+
+:RU,LUPRN
+                      RTE-6 SYSTEM DEVICE CONFIGURATION
+                 RTE-6 SYSTEM REV = 2540  LUPRN'S REV = 2440
+             10:00 AM FRI., 19 SEPT, 1986...SORTED BY SYSTEM LU
+  TIME BASE (11B)  PRIV. FENCE SC (NONE)  PARTITIONS (6)  MEMORY SIZE (256K)
+ 
+     LU  EQT,SC SCD FLAGS AV T.OUT  STATS  DRIVER DP DEVICE NAME      LU
+     --- ------ --- ----- -- ------ -----  ------ -- ---------------- ---
+       1   4    64B  B S   2 300.00        DVR00  52 CRT/TTY TERMINAL   1
+       2   1    12B D         50.00        DVR32   4 7905/6/20/25 DSK   2
+ 
+         ************  SYSTEM LU 3 UNASSIGNED  *************
+ 
+       4   2,1  15B  B       300.00        DVA05  58 LEFT MINICART.     4
+       5   2,2  15B  B       300.00        DVA05  58 RIGHT MINICART.    5
+       6   6    16B  B                     DVC12  58 2608S PRINTER      6
+ 
+         ************  SYSTEM LU 7 UNASSIGNED  *************
+ 
+       8   8    17B  B         5.00        DVR23  49 9TK MAG TAPE #0    8
+ 
+         ************  SYSTEM LU 9 UNASSIGNED  *************
+ 
+      10   1,1  12B D         50.00        DVR32   4 7905/6/20/25 DSK  10
+      11   1,2  12B D         50.00        DVR32   4 7905/6/20/25 DSK  11
+      12   1,3  12B D         50.00        DVR32   4 7905/6/20/25 DSK  12
+      13   1,4  12B D         50.00        DVR32   4 7905/6/20/25 DSK  13
+      14   1,5  12B D         50.00        DVR32   4 7905/6/20/25 DSK  14
+      15   1,6  12B D         50.00        DVR32   4 7905/6/20/25 DSK  15
+      16   1,7  12B D         50.00        DVR32   4 7905/6/20/25 DSK  16
+      17   1,8  12B D         50.00        DVR32   4 7905/6/20/25 DSK  17
+      18   1,9  12B D         50.00        DVR32   4 7905/6/20/25 DSK  18
+      19   1,10 12B D         50.00        DVR32   4 7905/6/20/25 DSK  19
+      20   1,11 12B D         50.00        DVR32   4 7905/6/20/25 DSK  20
+      21   1,12 12B D         50.00        DVR32   4 7905/6/20/25 DSK  21
+      22   1,13 12B D         50.00        DVR32   4 7905/6/20/25 DSK  22
+      23   1,14 12B D         50.00        DVR32   4 7905/6/20/25 DSK  23
+      24   1,15 12B D         50.00        DVR32   4 7905/6/20/25 DSK  24
+      25   1,16 12B D         50.00        DVR32   4 7905/6/20/25 DSK  25
+      26   1,17 12B D         50.00        DVR32   4 7905/6/20/25 DSK  26
+      27   1,18 12B D         50.00        DVR32   4 7905/6/20/25 DSK  27
+      28   1,19 12B D         50.00        DVR32   4 7905/6/20/25 DSK  28
+      29   1,20 12B D         50.00        DVR32   4 7905/6/20/25 DSK  29
+      30   1,21 12B D         50.00        DVR32   4 7905/6/20/25 DSK  30
+      31  47    25B D                      DVS23  61 .UNKNOWN DRIVER.  31
+ 
+         ************  SYSTEM LU'S 32 THRU 45 UNASSIGNED  *************
+ 
+      46   9    23B                        DVR07  49 MULTIPOINT TERM   46
+      47  10    71B                        DVR07  49 MULTIPOINT TERM   47
+      48  11    71B                        DVR07  49 MULTIPOINT TERM   48
+      49  12    71B                        DVR07  49 MULTIPOINT TERM   49
+      50  13    71B                        DVR07  49 MULTIPOINT TERM   50
+      51   5    21B           60.00        DVA37  61 59310 HPIB CARD   51
+      52   5,1  21B           60.00        DVA37  61 HPIB ADDRESS # 1  52
+      53   5,2  21B           60.00        DVA37  61 HPIB ADDRESS # 2  53
+      54   5,3  21B           60.00        DVA37  61 HPIB ADDRESS # 3  54
+      55   5,4  21B           60.00        DVA37  61 HPIB ADDRESS # 4  55
+      56   5,5  21B           60.00        DVA37  61 HPIB ADDRESS # 5  56
+      57   5,6  21B           60.00        DVA37  61 HPIB ADDRESS # 6  57
+      58   5,7  21B           60.00        DVA37  61 HPIB ADDRESS # 7  58
+      59   5,8  21B           60.00        DVA37  61 HPIB ADDRESS # 8  59
+      60   5,9  21B           60.00        DVA37  61 HPIB ADDRESS # 9  60
+      61   5,10 21B           60.00        DVA37  61 HPIB ADDRESS #10  61
+      62   5,11 21B           60.00        DVA37  61 HPIB ADDRESS #11  62
+      63   5,12 21B           60.00        DVA37  61 HPIB ADDRESS #12  63
+      64   5,13 21B           60.00        DVA37  61 HPIB ADDRESS #13  64
+      65   5,14 21B           60.00        DVA37  61 HPIB ADDRESS #14  65
+      66   7    24B  B       300.00        DVA05  58 TERMINAL W/MODEM  66
+      67   7,1  24B  B       300.00        DVA05  58 LEFT CTU @ LU 66  67
+      68   7,2  24B  B       300.00        DVA05  58 RIGHT CTU@ LU 66  68
+      69  23    61B  B       300.00        DVA05  58 TERMINAL W/MODEM  69
+      70  23,1  61B  B       300.00        DVA05  58 LEFT CTU @ LU 69  70
+      71  23,2  61B  B       300.00        DVA05  58 RIGHT CTU@ LU 69  71
+      72  24    62B  B       300.00        DVA05  58 TERMINAL W/MODEM  72
+      73  24,1  62B  B       300.00        DVA05  58 LEFT CTU @ LU 72  73
+      74  24,2  62B  B       300.00        DVA05  58 RIGHT CTU@ LU 72  74
+      75  25    63B  B       300.00        DVA05  58 TERMINAL W/MODEM  75
+      76  25,1  63B  B       300.00        DVA05  58 LEFT CTU @ LU 75  76
+      77  25,2  63B  B       300.00        DVA05  58 RIGHT CTU@ LU 75  77
+      78  26    04B                        DVP43  10$POWER FAIL        78
+      79   4    64B  B S   2 300.00        DVR00  52 CRT/TTY TERMINAL  79
+      80   3    72B  B                     DVB12  40 2608A PRINTER     80
+      81   3,3  72B  B                     DVB12  40 2608A READ-BACK   81
+      82  14    22B  B                40B  DVM00  55 12792A 8-CH MUX   82
+      83  15    22B  B                40B  DVM00  55 12792A 8-CH MUX   83
+      84  16    22B  B                40B  DVM00  55 12792A 8-CH MUX   84
+      85  17    22B  B                40B  DVM00  55 12792A 8-CH MUX   85
+      86  18    22B  B                40B  DVM00  55 12792A 8-CH MUX   86
+      87  19    22B  B                40B  DVM00  55 12792A 8-CH MUX   87
+      88  20    22B  B                40B  DVM00  55 12792A 8-CH MUX   88
+      89  21    22B  B                40B  DVM00  55 12792A 8-CH MUX   89
+      90  27    52B                        DVS43  10$SPOOLING (IDLE)   90
+      91  28    53B                        DVS43  10$SPOOLING (IDLE)   91
+      92  29    54B                        DVS43  10$SPOOLING (IDLE)   92
+      93  30    55B                        DVS43  10$SPOOLING (IDLE)   93
+      94  31    56B                        DVS43  10$SPOOLING (IDLE)   94
+      95  32    57B                        DVS43  10$SPOOLING (IDLE)   95
+      96  35    14B                        DVA66   4 HDLC/BISYNC CARD  96
+      97  36    14B                        DVA66   4 HDLC/BISYNC CARD  97
+      98  40    65B D                      DVG67  52 DS TO 3000-HSI    98
+      99  37,1  66B             .03        DVA65  43 DS1000 TO 1000    99
+     100  38    67B             .30        DVA65  43 DS1000 TO 1000   100
+     101  39,1  70B             .03        DVA65  43 DS1000 TO 1000   101
+     102  33    73B                   40B  DVV00  46 DS-REMOTEMAPPING 102
+     103  34    73B                   40B  DVV00  46 DS-REMOTEMAPPING 103
+     104  41    13B                        DVA66   4 HDLC/BISYNC CARD 104
+     105  42    13B                        DVA66   4 HDLC/BISYNC CARD 105
+ 
+         ************  SYSTEM LU'S 106 THRU 120 UNASSIGNED  *************
+ 
+     121  43    76B                        DV?77* 43 .UNKNOWN DRIVER. 121
+     122  44    77B                        DV?77* 40 .UNKNOWN DRIVER. 122
+ 
+         ************  SYSTEM LU'S 123 THRU 130 UNASSIGNED  *************
+     --- ------ --- ----- -- ------ -----  ------ -- ---------------- ---
+ 
+   NOTE1: DV?XX* INDICATES THAT THE TRUE DRIVERNAME IS NOT DETERMINABLE
+          SINCE THERE ARE OTHER DRIVERS WITH THE SAME INIT/CONT ADDRESSES.
+ 
+     DP=DRIVER PARTITION PAGE ($=SDA)
+     (T.OUT IS IN SECONDS)                EQT FLAGS:
+     LU # WITH A      EQT AVAILABILITY:     D=DCPC, B=BUFFERED, T=TIMED-OUT
+     D MEANS THE       1=DOWN, 2=BUSY,      P=DRIVER HANDLES POWERFAIL
+     LU IS DOWN.       3=WAITING DCPC       S=DRIVER HANDLES TIMEOUT
+:EX
+ $END FMGR
+
+[CTRL+E]
+
+Simulation stopped, P: 02040 (JMP 2037)
+sim> quit
+Goodbye
